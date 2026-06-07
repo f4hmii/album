@@ -29,7 +29,7 @@ const MEMORIES = [
     categoryLabel: 'Kencan Pertama',
     title: 'Bersanding Bersama',
     date: '28 Maret 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 21.43.57.jpeg',
+    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57.jpeg',
     note: 'Momen manis saat kita menikmati sore yang indah bersama sambil merencanakan masa depan.',
     height: 800
   },
@@ -39,7 +39,7 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Tawa Lepas Kita',
     date: '29 Maret 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 21.43.57 (1).jpeg',
+    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57%20(1).jpeg',
     note: 'Canda gurau sederhana yang selalu terasa istimewa saat dihabiskan bersama dirimu.',
     height: 600
   },
@@ -49,7 +49,7 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Genggaman Erat',
     date: '30 Maret 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 21.43.57 (2).jpeg',
+    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57%20(2).jpeg',
     note: 'Jemari kita yang saling menguatkan, membuktikan bahwa kita siap melalui segalanya bersama.',
     height: 750
   },
@@ -59,7 +59,7 @@ const MEMORIES = [
     categoryLabel: 'Kencan Pertama',
     title: 'Menyusuri Jalan Sunyi',
     date: '5 April 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 21.44.26.jpeg',
+    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.44.26.jpeg',
     note: 'Setiap sudut jalan terasa penuh warna ketika aku melangkah berdampingan denganmu.',
     height: 580
   },
@@ -69,7 +69,7 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Momen Indah Berdua',
     date: '12 April 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 22.22.29.jpeg',
+    image: '/images/WhatsApp%20Image%202026-03-28%20at%2022.22.29.jpeg',
     note: 'Kenangan manis yang terukir indah, takkan pernah pudar oleh berjalannya waktu.',
     height: 920
   },
@@ -129,7 +129,7 @@ const MEMORIES = [
     categoryLabel: 'Pertama Bertemu',
     title: 'Merenda Cerita Kita',
     date: '10 Juni 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 21.43.57.jpeg',
+    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57.jpeg',
     note: 'Bercerita tanpa henti tentang mimpi-mimpi masa kecil dan rencana masa depan kita.',
     height: 710
   },
@@ -139,7 +139,7 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Senyuman Termisra',
     date: '15 Juni 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 21.43.57 (1).jpeg',
+    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57%20(1).jpeg',
     note: 'Setiap kali kamu tersenyum lepas seperti ini, seluruh duniaku ikut tersenyum.',
     height: 590
   },
@@ -149,59 +149,9 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Menggenggam Harapan',
     date: '20 Juni 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 21.43.57 (2).jpeg',
+    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57%20(2).jpeg',
     note: 'Genggaman hangat yang meyakinkanku bahwa kamu adalah pelabuhan terakhir hatiku.',
     height: 880
-  },
-  {
-    id: 16,
-    category: 'first-date',
-    categoryLabel: 'Kencan Pertama',
-    title: 'Kencan Sore Hari',
-    date: '25 Juni 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 21.44.26.jpeg',
-    note: 'Berjalan berdua menikmati sejuknya angin sore, mengukir memori indah baru.',
-    height: 660
-  },
-  {
-    id: 17,
-    category: 'special-moments',
-    categoryLabel: 'Momen Spesial',
-    title: 'Detik-Detik Berharga',
-    date: '30 Juni 2025',
-    image: '/images/WhatsApp Image 2026-03-28 at 22.22.29.jpeg',
-    note: 'Waktu seakan berhenti ketika kita menghabiskan waktu bersama tanpa peduli dunia sekitar.',
-    height: 740
-  },
-  {
-    id: 18,
-    category: 'first-date',
-    categoryLabel: 'Kencan Pertama',
-    title: 'Piknik Santai Sore',
-    date: '5 Juli 2025',
-    image: '/images/photo-1.jpg',
-    note: 'Piknik sederhana di taman yang hijau sembari menikmati bekal buatanmu yang lezat.',
-    height: 800
-  },
-  {
-    id: 19,
-    category: 'first-date',
-    categoryLabel: 'Kencan Pertama',
-    title: 'Kilau Senja Romantis',
-    date: '10 Juli 2025',
-    image: '/images/photo-2.jpg',
-    note: 'Langit sore yang merona merah jingga menjadi latar terindah bagi kisah cinta kita.',
-    height: 570
-  },
-  {
-    id: 20,
-    category: 'special-moments',
-    categoryLabel: 'Momen Spesial',
-    title: 'Langkah Bersama',
-    date: '15 Juli 2025',
-    image: '/images/photo-3.jpg',
-    note: 'Terus melangkah beriringan menuju hari esok yang penuh dengan harapan dan kebahagiaan.',
-    height: 900
   }
 ];
 
@@ -211,7 +161,7 @@ export default function MainAlbum() {
     const saved = localStorage.getItem('romantic-gallery-likes');
     if (saved) return JSON.parse(saved);
     const defaultLikes = {};
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 15; i++) {
       defaultLikes[i] = 0;
     }
     return defaultLikes;
