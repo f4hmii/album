@@ -29,7 +29,7 @@ const MEMORIES = [
     categoryLabel: 'Kencan Pertama',
     title: 'Bersanding Bersama',
     date: '28 Maret 2025',
-    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57.jpeg',
+    image: '/images/whatsapp_main.jpeg',
     note: 'Momen manis saat kita menikmati sore yang indah bersama sambil merencanakan masa depan.',
     height: 800
   },
@@ -39,7 +39,7 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Tawa Lepas Kita',
     date: '29 Maret 2025',
-    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57%20(1).jpeg',
+    image: '/images/whatsapp_1.jpeg',
     note: 'Canda gurau sederhana yang selalu terasa istimewa saat dihabiskan bersama dirimu.',
     height: 600
   },
@@ -49,7 +49,7 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Genggaman Erat',
     date: '30 Maret 2025',
-    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57%20(2).jpeg',
+    image: '/images/whatsapp_2.jpeg',
     note: 'Jemari kita yang saling menguatkan, membuktikan bahwa kita siap melalui segalanya bersama.',
     height: 750
   },
@@ -59,7 +59,7 @@ const MEMORIES = [
     categoryLabel: 'Kencan Pertama',
     title: 'Menyusuri Jalan Sunyi',
     date: '5 April 2025',
-    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.44.26.jpeg',
+    image: '/images/whatsapp_3.jpeg',
     note: 'Setiap sudut jalan terasa penuh warna ketika aku melangkah berdampingan denganmu.',
     height: 580
   },
@@ -69,7 +69,7 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Momen Indah Berdua',
     date: '12 April 2025',
-    image: '/images/WhatsApp%20Image%202026-03-28%20at%2022.22.29.jpeg',
+    image: '/images/whatsapp_4.jpeg',
     note: 'Kenangan manis yang terukir indah, takkan pernah pudar oleh berjalannya waktu.',
     height: 920
   },
@@ -129,7 +129,7 @@ const MEMORIES = [
     categoryLabel: 'Pertama Bertemu',
     title: 'Merenda Cerita Kita',
     date: '10 Juni 2025',
-    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57.jpeg',
+    image: '/images/whatsapp_main.jpeg',
     note: 'Bercerita tanpa henti tentang mimpi-mimpi masa kecil dan rencana masa depan kita.',
     height: 710
   },
@@ -139,7 +139,7 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Senyuman Termisra',
     date: '15 Juni 2025',
-    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57%20(1).jpeg',
+    image: '/images/whatsapp_1.jpeg',
     note: 'Setiap kali kamu tersenyum lepas seperti ini, seluruh duniaku ikut tersenyum.',
     height: 590
   },
@@ -149,7 +149,7 @@ const MEMORIES = [
     categoryLabel: 'Momen Spesial',
     title: 'Menggenggam Harapan',
     date: '20 Juni 2025',
-    image: '/images/WhatsApp%20Image%202026-03-28%20at%2021.43.57%20(2).jpeg',
+    image: '/images/whatsapp_2.jpeg',
     note: 'Genggaman hangat yang meyakinkanku bahwa kamu adalah pelabuhan terakhir hatiku.',
     height: 880
   }
@@ -241,7 +241,7 @@ export default function MainAlbum() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <span className="album-pretitle">Kisah Perjalanan Kita</span>
-          <h1 className="album-title">Album Kenangan Romantis</h1>
+          <h1 className="album-title">Album Kenangan Kita</h1>
           <div className="header-divider">
             <svg className="divider-heart" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
