@@ -1,0 +1,20 @@
+.scroll-reveal-container {
+  margin: 1.25rem 0;
+  display: block;
+}
+
+.scroll-reveal-text {
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  line-height: 1.25;
+  font-weight: 800;
+  font-family: var(--font-serif);
+  color: #ffffff;
+  display: block;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.inline-block-word {
+  display: inline-block;
+  will-change: opacity, filter;
+  margin-right: 0.25em;
+}

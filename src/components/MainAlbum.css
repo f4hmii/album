@@ -1,0 +1,368 @@
+.album-container {
+  padding: 0 0 140px 0; /* No top padding to allow full viewport height hero */
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  z-index: 5;
+}
+
+/* Hero Section */
+.album-hero {
+  position: relative;
+  width: 100%;
+  height: clamp(650px, 92vh, 1080px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: clamp(40px, 8vw, 70px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/couple_hero.png');
+  background-size: cover;
+  background-position: center 30%;
+  z-index: 1;
+  filter: brightness(0.8);
+  animation: slowZoomPan 20s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoomPan {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.05) translate(1%, 1%); }
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 75%, rgba(0,0,0,0.98) 100%);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 24px;
+  max-width: 750px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Header & Typography inside Hero */
+.album-pretitle {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  letter-spacing: 4px;
+  color: var(--color-primary);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.album-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 5vw + 1rem, 3.8rem);
+  font-weight: 850;
+  color: #fff;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #ffffff 30%, var(--color-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.15;
+  filter: drop-shadow(0 2px 15px rgba(0,0,0,0.5));
+}
+
+.header-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0 25px 0;
+}
+
+.header-divider::before,
+.header-divider::after {
+  content: '';
+  width: 60px;
+  height: 1.5px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--color-primary) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.divider-heart {
+  width: 22px;
+  height: 22px;
+  color: var(--color-primary);
+  animation: heartBeat 1.8s infinite;
+  filter: drop-shadow(0 0 6px var(--color-primary));
+}
+
+.album-subtitle {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #e5def0;
+  font-size: clamp(0.95rem, 2.5vw, 1.08rem);
+  line-height: 1.8;
+  font-weight: 300;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+/* Gallery Section Wrapper */
+.gallery-section {
+  padding: 0 clamp(16px, 4vw, 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gallery-section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+  border-left: 3px solid var(--color-primary);
+  padding-left: 15px;
+  letter-spacing: 0.5px;
+}
+
+.gallery-masonry-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.empty-memories {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  padding: 80px 0;
+  font-style: italic;
+  width: 100%;
+}
+
+/* Bento Like Button (used in Masonry details lightbox) */
+.bento-like-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.bento-like-btn:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(var(--color-primary-rgb), 0.4);
+}
+
+.bento-like-icon {
+  font-size: 0.95rem;
+}
+
+.bento-like-count {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* Lightbox Modal (Pitch Black Theme) */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(12px, 3vw, 24px);
+  animation: fadeIn 0.4s ease-out;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 100%;
+  max-width: 860px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #060606;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  animation: scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2.2rem;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: var(--color-primary);
+}
+
+.lightbox-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.lightbox-image-wrapper {
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.lightbox-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lightbox-details {
+  padding: clamp(24px, 4vw, 40px);
+  display: flex;
+  flex-direction: column;
+  background: #0a0a0a;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.lightbox-category {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.lightbox-date {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.lightbox-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+
+.lightbox-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.lightbox-note {
+  font-size: clamp(0.9rem, 2.5vw, 1.02rem);
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 25px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.large-like {
+  position: static;
+  padding: 10px 24px;
+  align-self: flex-start;
+}
+
+/* Floating click hearts */
+.click-heart-pop {
+  position: fixed;
+  pointer-events: none;
+  font-size: 28px;
+  z-index: 300;
+  transform: translate(-50%, -50%);
+  animation: heartPopAnim 1s ease-out forwards;
+}
+
+@keyframes heartPopAnim {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -120px) scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -180px) scale(0.8) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 768px) {
+  .lightbox-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .lightbox-content {
+    max-height: 85vh;
+  }
+  
+  .lightbox-image-wrapper {
+    height: 280px;
+    flex-shrink: 0;
+  }
+  
+  .lightbox-details {
+    padding: 24px 20px;
+  }
+  
+  .album-container {
+    padding-bottom: 150px;
+  }
+}
